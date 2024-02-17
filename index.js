@@ -17,8 +17,8 @@ app.use("/api",weatherrouter);
 mongoose.connect(MONGO_CONNECTION)
 .then(()=>{
     console.log("connected to mongodb cloud");
-    app.listen(3000,()=>{
-        console.log("Weather api app is running on port 3000");
+    app.listen(3008,()=>{
+        console.log("Weather api app is running on port 3008");
     });
 })
 .catch((error)=>{
